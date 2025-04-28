@@ -1,15 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/page-flip.browser.js"></script>
+    <script defer src="./scripts/main.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Ryan Rocha</title>
 </head>
+
 <body>
     <div class="estrelas"></div>
     <div class="conteudo">
-        <div class="container">
+        <nav>
+            <div style="vertical-align:sub;">
+                <a target="_blank" style="text-decoration: none; color: white;" href="/CV - Ryan.Rocha.pdf">
+                    <h1>ryanrocha.space</h1> <i class='bx bx-download' style="font-size: 24px;"></i>
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="https://github.com/mexuz" target="_blank"><i class='bx bxl-github' style="font-size: 24px; vertical-align:sub;"></i> Github</a></li>
+                <li><a href="https://www.linkedin.com/in/ryanrochamoreira/" target="_blank"><i class='bx bxl-linkedin-square' style="font-size: 24px; vertical-align:sub;"></i> Linkedin</a></li>
+        </nav>
+        <div class="book-container">
+            <div class="book">
+                <div class="book-cover cover1">
+                    <div class="effect"></div>
+                    <div class="light"></div>
+                </div>
+                <div class="book-inside"></div>
+            </div>
+            <div class="book">
+                <div class="book-cover cover2">
+                    <div class="effect"></div>
+                    <div class="light"></div>
+                </div>
+                <div class="book-inside"></div>
+            </div>
+            <div class="book">
+                <div class="book-cover cover3">
+                    <div class="effect"></div>
+                    <div class="light"></div>
+                </div>
+                <div class="book-inside"></div>
+            </div>
+        </div>
+        <div class="flipbook-popup" id="flipbook1">
+            <div class="flipbook-content">
+                <button class="close-btn" onclick="closeFlipbook('flipbook1')">X</button>
+                <div id="flipbook">
+                    <div id="page1" class="page">
+                        <section>
+                            <h2>Quem é Ryan Rocha Moreira</h2>
+                            <p>Ryan Rocha Moreira é estudante de Engenharia da Computação pela Universidade Federal de Itajubá (UNIFEI) e Técnico em Informática pelo IFRJ. Possui perfil multidisciplinar e busca integrar habilidades técnicas de computação com a capacidade analítica e de inovação necessárias para resolver problemas de alta complexidade.</p>
+                        </section>
+                    </div>
+                    <div id="page2" class="page">
+                        <section>
+                            <h2>Trajetória Acadêmica</h2>
+                            <p>Concluiu o curso técnico em Informática no Instituto Federal do Rio de Janeiro (IFRJ), consolidando sua base prática em desenvolvimento de software e sistemas. Atualmente, dedica-se à formação superior em Engenharia da Computação, com previsão de formatura em dezembro de 2029.</p>
+                        </section>
+                    </div>
+                    <div id="page3" class="page">
+                        <section>
+                            <h2>Personalidade e Mentalidade</h2>
+                            <p>Apresenta mentalidade sistêmica e pensamento lateral, focando na análise integrada de problemas e na geração de soluções inovadoras. Valoriza o aprendizado contínuo, demonstrando alta resiliência, adaptabilidade e proatividade em ambientes dinâmicos. Tem orientação clara para resultados, alinhada com pensamento crítico e gestão eficaz do tempo.</p>
+                        </section>
+                    </div>
+                    <div id="page4" class="page">
+                        <section>
+                            <h2>Idiomas</h2>
+                            <p>Possui domínio avançado da língua inglesa (nível C1), habilitando-se a trabalhar em projetos internacionais, bem como a consumir materiais técnicos de ponta. Também possui proficiência pré-intermediária em francês (nível A2), agregando valor em contextos multilíngues e fortalecendo a comunicação intercultural.</p>
+                        </section>
+                    </div>
+                    <div id="page5" class="page">
+                        <section>
+                            <h2>Motivação</h2>
+                            <p>Movido pela busca por inovação, Ryan Rocha Moreira se interessa especialmente por projetos que envolvem desafios inéditos e soluções personalizadas, demonstrando perfil antifrágil ao crescer em cenários de alta pressão e complexidade.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flipbook-popup" id="flipbook2">
+            <div class="flipbook-content">
+                <button class="close-btn" onclick="closeFlipbook('flipbook2')">X</button>
+                <div id="flipbook">
+                    <div id="page1" class="page">
+                        <section>
+                            <h2>Experiência em Desenvolvimento</h2>
+                            <p>Atua no desenvolvimento de sistemas e automações personalizadas, com forte ênfase em eficiência de processos e inovação tecnológica. Tem experiência prática em ambientes de Ciência de Dados e aplicações de Machine Learning.</p>
+                        </section>
+                    </div>
+                    <div id="page2" class="page">
+                        <section>
+                            <h2>Projeto: Otimização de Rações</h2>
+                            <p>Desenvolveu um software de cálculo e otimização de rações para o campus Pinheiral do IFRJ em 2023. O projeto impactou diretamente a gestão de recursos e o bem-estar animal, integrando análise matemática, programação e modelagem de dados.</p>
+                        </section>
+                    </div>
+                    <div id="page3" class="page">
+                        <section>
+                            <h2>Implementações em Cloud Computing</h2>
+                            <p>Participou de projetos de deploy de aplicações utilizando EC2 e RDS na AWS, além de automação de infraestrutura com Terraform e monitoramento com CloudWatch, combinando práticas de DevOps para garantir alta disponibilidade e segurança dos sistemas.</p>
+                        </section>
+                    </div>
+                    <div id="page4" class="page">
+                        <section>
+                            <h2>Experiência com Acessibilidade</h2>
+                            <p>Realizou tradução e legendagem de vídeos de inglês para português, com foco em acessibilidade para pessoas surdas e não falantes da língua inglesa, demonstrando compromisso com inclusão digital e democratização do conhecimento.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flipbook-popup" id="flipbook3">
+            <div class="flipbook-content">
+                <button class="close-btn" onclick="closeFlipbook('flipbook3')">X</button>
+                <div id="flipbook">
+                    <div id="page1" class="page">
+                        <section>
+                            <h2>Programação</h2>
+                            <p>Domínio de Python e C++ para desenvolvimento de sistemas, automações e aplicações de ciência de dados. Familiaridade com práticas de programação orientada a objetos e otimização de código.</p>
+                        </section>
+                    </div>
+                    <div id="page2" class="page">
+                        <section>
+                            <h2>Fundamentos de Cloud Computing</h2>
+                            <p>Conhecimento sólido em serviços AWS, incluindo EC2, S3, RDS, IAM e Lambda. Experiência com arquiteturas baseadas no AWS Well-Architected Framework, garantindo escalabilidade, segurança e eficiência de custos.</p>
+                        </section>
+                    </div>
+                    <div id="page3" class="page">
+                        <section>
+                            <h2>Machine Learning e IA</h2>
+                            <p>Experiência prática com SageMaker, Polly e Rekognition da AWS para implementação de projetos de Machine Learning, reconhecimento de imagens e processamento de linguagem natural.</p>
+                        </section>
+                    </div>
+                    <div id="page4" class="page">
+                        <section>
+                            <h2>Segurança e Compliance</h2>
+                            <p>Conhecimento em boas práticas de segurança na nuvem, incluindo gestão de identidades e acessos (IAM), criptografia de dados, auditorias e compliance com padrões internacionais.</p>
+                        </section>
+                    </div>
+                    <div id="page5" class="page">
+                        <section>
+                            <h2>Infraestrutura como Código</h2>
+                            <p>Implementação de infraestrutura automatizada utilizando AWS CloudFormation e Terraform, permitindo criação e gestão de ambientes escaláveis, seguros e replicáveis.</p>
+                        </section>
+                    </div>
+                    <div id="page6" class="page">
+                        <section>
+                            <h2>Bancos de Dados</h2>
+                            <p>Administração de bancos de dados relacionais e NoSQL, com foco em AWS RDS, DynamoDB e Redshift. Experiência com modelagem, consultas otimizadas e integração de dados em pipelines de ciência de dados.</p>
+                        </section>
+                    </div>
+                    <div id="page7" class="page">
+                        <section>
+                            <h2>DevOps e CI/CD</h2>
+                            <p>Implementação de pipelines de integração e entrega contínua utilizando AWS CodePipeline e CodeDeploy. Automação de testes e deploys seguros em ambientes de produção.</p>
+                        </section>
+                    </div>
+                    <div id="page8" class="page">
+                        <section>
+                            <h2>Redes na Nuvem</h2>
+                            <p>Configuração e gerenciamento de redes privadas virtuais (VPC), sub-redes, roteamento, balanceamento de carga e grupos de segurança na AWS, com foco em desempenho e segurança.</p>
+                        </section>
+                    </div>
+                    <div id="page9" class="page">
+                        <section>
+                            <h2>Monitoramento e Otimização</h2>
+                            <p>Monitoramento de recursos e otimização de custos utilizando AWS CloudWatch, Trusted Advisor e Cost Explorer, garantindo ambientes eficientes e financeiramente sustentáveis.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+<script>
+    function closeFlipbook(id) {
+        $(`#${id}`).fadeOut();
+    }
+</script>
+
 </html>
